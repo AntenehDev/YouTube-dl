@@ -19,5 +19,7 @@ do
 	fi
 	youtube-dl -i -f bestvideo+bestaudio -o '%(title)s.%(ext)s' "${url}"
 	#youtube-dl -i -f best -o '%(title)s.%(ext)s' "${url}"
+	#youtube-dl -i --extract-audio -x --embed-thumbnail --audio-format mp3 --audio-quality 0 -o '%(title)s.%(ext)s' "${url}"
+
 done
 
