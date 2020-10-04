@@ -17,7 +17,7 @@ do
 	then
 		exit
 	fi
-	youtube-dl -f bestvideo+bestaudio -o '%(title)s.%(ext)s' "${url}"
-	#youtube-dl -f best -o '%(title)s.%(ext)s' "${url}"
+	youtube-dl -i -f bestvideo+bestaudio -o '%(title)s.%(ext)s' "${url}"
+	#youtube-dl -i -f best -o '%(title)s.%(ext)s' "${url}"
 done
 
